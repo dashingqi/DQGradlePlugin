@@ -20,6 +20,19 @@ allprojects {
         jcenter()
     }
 }
+apply plugin: MyPlugin
+// 自定义插件
+class MyPlugin implements Plugin<Project> {
+
+    @Override
+    void apply(Project project) {
+        project.task("CustomPluginTask"){
+            doLast{
+                println "自定义插件"
+            }
+        }
+    }
+}
 
 task clean(type: Delete) {
     delete rootProject.buildDir
