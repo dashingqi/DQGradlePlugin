@@ -1,3 +1,4 @@
-include ':buildsrc'
+include ':plugin1'
+include ':buildPlugin'
 include ':app'
 rootProject.name = "DQPlugin"

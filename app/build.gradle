@@ -1,7 +1,20 @@
+buildscript {
+    repositories {
+        maven {
+            url uri('../repo')
+        }
+    }
+    dependencies {
+        classpath 'com.dashingqi.gradle:plugin1:1.0.0'
+    }
+}
+
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
 }
+
+apply plugin: "plugin.dq"
 
 
 android {
@@ -34,7 +47,6 @@ android {
 }
 
 dependencies {
-
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.2.0'
     implementation 'androidx.appcompat:appcompat:1.1.0'

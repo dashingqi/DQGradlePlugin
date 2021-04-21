@@ -1,0 +1,23 @@
+apply plugin: "groovy"
+apply plugin: "maven"
+
+dependencies {
+    implementation gradleApi()
+    implementation localGroovy()
+}
+
+repositories {
+    mavenCentral()
+}
+
+group="com.dashingqi.gradle"
+version="1.0.0"
+
+// 发布到本地仓库，保存在工程的 repo文件下
+//uploadArchives {
+//    repositories {
+//        mavenDeployer {
+//            repository(url: uri('../repo'))
+//        }
+//    }
+//}
