@@ -5,15 +5,18 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'com.dashingqi.gradle:plugin1:1.0.0'
+        classpath 'com.dashingqi.gradle.plugin:plugins:1.0.0'
     }
 }
+
+
 
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
 }
 
+apply plugin: 'plugin.test'
 
 
 android {
