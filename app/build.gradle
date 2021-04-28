@@ -1,13 +1,13 @@
-buildscript {
-    repositories {
-        maven {
-            url uri('../repo')
-        }
-    }
-    dependencies {
-        classpath 'com.dashingqi.gradle.plugin:plugins:1.0.0'
-    }
-}
+//buildscript {
+//    repositories {
+//        maven {
+//            url uri('../repo')
+//        }
+//    }
+//    dependencies {
+//        classpath 'com.dashingqi.plugin:plugins:1.0.0'
+//    }
+//}
 
 
 
@@ -16,7 +16,7 @@ plugins {
     id 'kotlin-android'
 }
 
-apply plugin: 'plugin.test'
+//apply plugin: 'plugin-test'
 
 
 android {

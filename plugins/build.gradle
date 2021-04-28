@@ -9,9 +9,24 @@ dependencies {
 repositories {
     mavenCentral()
 }
+group = 'com.dashingqi.plugin'
+version = '1.0.0'
+sourceSets {
+    main {
+        groovy {
+            srcDir 'src/main/groovy'
+        }
 
-group='com.dashingqi.gradle.plugin'
-version='1.0.0'
+        java {
+            srcDir "src/main/java"
+        }
+
+        resources {
+            srcDir 'src/main/resources'
+        }
+    }
+}
+
 
 uploadArchives {
     repositories {
